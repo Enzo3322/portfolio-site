@@ -8,6 +8,7 @@
   </head>
   <body>
     <style>
+      /* Global Styles */
       html,
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -18,6 +19,19 @@
         padding: 0;
         scroll-behavior: smooth;
         scroll-snap-align: start;
+      }
+
+      /* Hero Section */
+      #hero,
+      #projects {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #13508d;
+        color: #eee;
       }
 
       #hero h1 {
@@ -32,64 +46,100 @@
         margin-bottom: 0;
       }
 
-      section h2 {
+      /* About Section */
+      #about {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      #about h2 {
         font-size: 36px;
         font-weight: 600;
         margin-bottom: 32px;
       }
 
-      section p {
+      #about p {
         font-size: 20px;
         font-weight: 400;
         margin-bottom: 0;
         text-align: center;
       }
 
-      .projects {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        gap: 20px;
-      }
-
-      .project {
-        margin-bottom: 32px;
-      }
-
-      .project h3 {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 8px;
-      }
-
-      .project p {
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-
-        margin-bottom: 0;
-      }
-
-      #hero,
-      #contact,
-      #about,
+      /* Projects Section */
       #projects {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
         padding: 20px;
       }
-      p {
-        max-width: 80vw;
+
+      #projects h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 32px;
       }
-      #projects,
-      #hero {
-        background-color: #13508d;
-        color: #eee;
+
+      .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .project {
+        margin-bottom: 32px;
+        border: 1px solid #fff;
+        padding: 20px;
+      }
+
+      .project h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 8px 0;
+      }
+
+      .project p {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin: 8px 0;
+      }
+
+      /* Contact Section */
+      #contact {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      #contact h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 32px;
+      }
+
+      #contact p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      .links {
+        display: flex;
+        gap: 40px;
       }
 
       .primary-button {
@@ -107,20 +157,79 @@
         justify-content: center;
         gap: 10px;
       }
+
       .primary-button:hover {
         background-color: #0a5cbb;
-      }
-
-      .links {
-        display: flex;
-        gap: 40px;
       }
 
       .github {
         background-color: #24292e;
       }
+
       .github:hover {
         background-color: #2f363d;
+      }
+
+      section {
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      /* Mobile Styles */
+      @media (max-width: 768px) {
+        #hero h1 {
+          font-size: 36px;
+        }
+
+        #hero p {
+          font-size: 20px;
+        }
+
+        #about {
+          padding: 80px 20px !important;
+        }
+
+        #about h2 {
+          font-size: 30px;
+        }
+
+        #about p {
+          font-size: 18px;
+        }
+
+        #projects h2 {
+          font-size: 30px;
+        }
+
+        .project h3 {
+          margin: 0;
+          font-size: 20px;
+        }
+
+        .projects {
+          flex-direction: column;
+        }
+
+        .project p {
+          font-size: 16px;
+        }
+
+        #contact h2 {
+          font-size: 30px;
+        }
+
+        #contact p {
+          font-size: 18px;
+        }
+
+        .primary-button {
+          font-size: 18px;
+          padding: 10px 40px;
+        }
+        .links {
+          flex-direction: column;
+          gap: 0;
+        }
       }
     </style>
     <section id="hero">
