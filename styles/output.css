@@ -722,7 +722,11 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
 }
 
 .hover\:bg-white:hover {
