@@ -16,5 +16,5 @@ body {
 }
 
 section {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
