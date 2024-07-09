@@ -704,6 +704,12 @@ video {
   transition-duration: 150ms;
 }
 
+@font-face {
+  font-family: Poppins;
+
+  src: url(../public/poppins.ttf);
+}
+
 html,
 body {
   font-family: Poppins;

@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Poppins;
+  src: url(../public/poppins.ttf);
+}
 html,
 body {
   font-family: Poppins;
