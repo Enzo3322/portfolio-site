@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./public/dev.svg" type="image/x-icon" />
-    <meta
-      name="description"
-      content="Welcome to my portfolio! I'm Enzo Spagnolli, a Full Stack Developer"
-    />
-    <meta
-      name="keywords"
-      content="Full Stack Developer, Web Developer, Enzo Spagnolli, Portfolio, Software Engineer, Senior Software Engineer, FullStack"
-    />
-    <meta name="author" content="Enzo Spagnolli" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Enzo Spagnolli - Full Stack Developer" />
-    <meta
-      property="og:description"
-      content="Welcome to my portfolio! I'm Enzo Spagnolli, a Full Stack Developer "
-    />
 
-    <meta property="og:url" content="https://spag.dev" />
-    <meta property="og:type" content="website" />
-    <title>Enzo Spagnolli - Full Stack Developer</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./public/dev.svg" type="image/x-icon" />
+  <meta name="description" content="Senior Full-Stack Developer specializing in VTEX, React, Node.js, and AWS. Experienced in e-commerce, system design, and cloud architecture." />
+  <meta name="keywords" content="Full Stack Developer, VTEX Developer, React Developer, Node.js Developer, AWS, Kubernetes, GraphQL, TypeScript, Enzo Spagnolli, Senior Software Engineer, E-commerce Developer, System Architecture" />
+  <meta name="author" content="Enzo Spagnolli" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Enzo Spagnolli - Senior Full-Stack Developer | VTEX Specialist" />
+  <meta property="og:description" content="Senior Full-Stack Developer with expertise in VTEX, React, Node.js, and AWS. Specialized in e-commerce solutions and cloud architecture." />
+  <meta property="og:url" content="https://spag.dev" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://spag.dev/public/dev.svg" />
+  <meta property="og:site_name" content="Enzo Spagnolli Portfolio" />
 
-    <link rel="stylesheet" href="styles/output.css" />
-  </head>
-  <body>
-    <section
-      id="hero"
-      class="min-h-[70vh] flex items-center justify-center flex-col p-5 py-20 max-w-screen-lg m-auto"
-    >
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Enzo Spagnolli - Senior Full-Stack Developer" />
+  <meta name="twitter:description" content="Senior Full-Stack Developer specializing in VTEX, React, Node.js, and AWS. View my portfolio and projects." />
+  <meta name="twitter:image" content="https://spag.dev/public/dev.svg" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://spag.dev" />
+
+  <script src="//unpkg.com/alpinejs" defer></script>
+
+  <title>Enzo Spagnolli - Senior Full-Stack Developer | VTEX Specialist</title>
+
+  <link rel="stylesheet" href="styles/output.css" />
+</head>
+
+<body>
+  <main>
+    <section id="hero" class="min-h-[70vh] flex items-center justify-center flex-col p-5 py-20 max-w-screen-lg m-auto">
       <h1 class="md:text-5xl text-3xl font-semibold mb-10 w-full justify-start">
         👋 I'm Enzo, Senior Full-Stack Developer
       </h1>
@@ -40,13 +46,8 @@
       </p>
     </section>
 
-    <section
-      id="about"
-      class="min-h-[70vh] py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5"
-    >
-      <h2
-        class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full"
-      >
+    <section id="about" aria-label="About Me" class="min-h-[70vh] py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5">
+      <h2 class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full">
         About Me
       </h2>
       <p class="tracking-wider pb-6 md:text-xl text-base">
@@ -63,13 +64,54 @@
       </p>
     </section>
 
-    <section
-      id="about"
-      class="min-h-[70vh] py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5"
-    >
-      <h2
-        class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full"
-      >
+    <section id="technologies" aria-label="Technologies" class="py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5">
+      <h2 class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full">Technologies</h2>
+      <div x-data="{}" x-init="$nextTick(() => {
+          let ul = $refs.logos;
+          ul.insertAdjacentHTML('afterend', ul.outerHTML);
+          ul.nextSibling.setAttribute('aria-hidden', 'true');
+      })"
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes EKS" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" class="w-16 h-16 mb-4" />
+          </li>
+          <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ" class="w-16 h-16 mb-4" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" aria-label="Professional Experience" class="min-h-[70vh] py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5">
+      <h2 class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full">
         Experience
       </h2>
       <div class="mb-10 w-full">
@@ -149,35 +191,20 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div>
-          <a
-            class="text-2xl font-semibold mb-5 underline"
-            href="https://www.dentalpartner.com.br/"
-            target="_blank"
-            >Odontoprev</a
-          >
+          <a class="text-2xl font-semibold mb-5 underline" href="https://www.dentalpartner.com.br/" target="_blank">Odontoprev</a>
           <p class="text-base mt-2">
             Create a new e-commerce platform using VTEX IO using React and Node.
           </p>
         </div>
         <div>
-          <a
-            class="text-2xl font-semibold mb-5 underline"
-            href="https://www.carrefour.com.br/"
-            target="_blank"
-            >Carrefour</a
-          >
+          <a class="text-2xl font-semibold mb-5 underline" href="https://www.carrefour.com.br/" target="_blank">Carrefour</a>
           <p class="text-base mt-2">
             Create solutions for the e-commerce platform using VTEX, including
             checkout and payment processing.
           </p>
         </div>
         <div>
-          <a
-            class="text-2xl font-semibold mb-5 underline"
-            href="https://www.usaflex.com.br/"
-            target="_blank"
-            >Usaflex</a
-          >
+          <a class="text-2xl font-semibold mb-5 underline" href="https://www.usaflex.com.br/" target="_blank">Usaflex</a>
           <p class="text-base mt-2">
             Developing a new e-commerce platform using VTEX IO, ReactJS and
             NodeJS. Implementing new features and integrations inside OMNI
@@ -185,12 +212,7 @@
           </p>
         </div>
         <div>
-          <a
-            class="text-2xl font-semibold mb-5 underline"
-            href="https://sferaconstrucoes.com/"
-            target="_blank"
-            >Sfera</a
-          >
+          <a class="text-2xl font-semibold mb-5 underline" href="https://sferaconstrucoes.com/" target="_blank">Sfera</a>
           <p class="text-base mt-2">
             Developing new showcase website with Reactjs Strapi for an
             engineering and architecture company
@@ -199,13 +221,8 @@
       </div>
     </section>
 
-    <section
-      id="about"
-      class="min-h-[70vh] py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5"
-    >
-      <h2
-        class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full"
-      >
+    <section id="education" aria-label="Education" class="min-h-[70vh] py-20 flex items-center justify-center flex-col max-w-screen-lg m-auto p-5">
+      <h2 class="text-4xl font-semibold mb-10 flex gap-4 items-center justify-start w-full">
         Education
       </h2>
       <div class="mb-10 w-full">
@@ -228,41 +245,30 @@
       </div>
     </section>
 
-    <section
-      id="contact"
-      class="min-h-[70vh] flex items-center justify-center flex-col max-w-screen-lg m-auto p-5 py-20"
-    >
+    <section id="contact" aria-label="Contact Information" class="min-h-[70vh] flex items-center justify-center flex-col max-w-screen-lg m-auto p-5 py-20">
       <h2 class="text-4xl font-semibold mb-10 w-full justify-start">
-        Lets Connect
+        Let's Connect
       </h2>
       <p class="md:text-xl tracking-wider text-base text-left w-full">
         Feel free to reach out to me for any inquiries or collaboration
         opportunities.
       </p>
       <div class="flex md:flex-row flex-col gap-5 mt-10">
-        <a
-          rel="noopener"
-          target="_blank"
-          width="24"
-          height="24"
-          href="https://www.linkedin.com/in/enzospagnolli/"
-          class="bg-secondary px-20 py-3 font-semibold flex gap-2 items-center text-white"
-        >
+        <a rel="noopener" target="_blank" width="24" height="24" href="https://www.linkedin.com/in/enzospagnolli/" class="bg-secondary px-20 py-3 font-semibold flex gap-2 items-center text-white">
           <img src="./public/linkedin.svg" alt="Linkedin logo" />
           Linkedin
         </a>
-        <a
-          rel="noopener"
-          target="_blank"
-          width="24"
-          height="24"
-          href="https://github.com/Enzo3322"
-          class="bg-[#ffffff] px-20 py-3 font-semibold flex gap-2 items-center border-2 border-gray-950"
-        >
+        <a rel="noopener" target="_blank" width="24" height="24" href="https://github.com/Enzo3322" class="bg-[#ffffff] px-20 py-3 font-semibold flex gap-2 items-center border-2 border-gray-950">
           <img src="./public/github.svg" alt="Github logo" />
           Github
         </a>
       </div>
     </section>
-  </body>
+  </main>
+
+  <footer class="py-8 text-center text-sm text-gray-500">
+    <p>&copy; 2024 Enzo Spagnolli. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
