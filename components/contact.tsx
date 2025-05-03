@@ -25,20 +25,20 @@ export function Contact() {
 
           <div className="space-y-6">
             <a
-              href="mailto:enzo@example.com"
+              href="mailto:enzo.spag14@gmail.com"
               className="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors"
             >
               <Mail className="h-5 w-5" />
-              <span>enzo@example.com</span>
+              <span>enzo.spag14@gmail.com</span>
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/Enzo3322"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors"
             >
               <Github className="h-5 w-5" />
-              <span>github.com/enzo</span>
+              <span>github.com/Enzo3322</span>
             </a>
           </div>
         </div>

@@ -8,14 +8,14 @@ export function Footer() {
 
         <div className="flex space-x-6">
           <a
-            href="mailto:enzo@example.com"
+            href="mailto:enzo.spag14@gmail.com"
             className="text-gray-400 hover:text-purple-400 transition-colors"
             aria-label="Email"
           >
             <Mail className="h-5 w-5" />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/Enzo3322"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-purple-400 transition-colors"
