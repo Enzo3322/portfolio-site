@@ -8,7 +8,7 @@ import { CalendarDays, Briefcase } from "lucide-react"
 const experiences = [
   {
     title: "Senior Software Engineer",
-    company: "DBC / Usaflex",
+    company: "DBC Company",
     period: "Mar 2022 - present",
     responsibilities: [
       "System Design, Performance Optimization, Requirements Analysis, Prototyping",
@@ -22,7 +22,7 @@ const experiences = [
   },
   {
     title: "Software Engineer",
-    company: "Corebiz / Carrefour",
+    company: "Corebiz",
     period: "Aug 2021 - Mar 2022",
     responsibilities: [
       "Implementation of VTEX fast-store in the Carrefour group",
@@ -32,7 +32,7 @@ const experiences = [
   },
   {
     title: "Frontend Developer",
-    company: "Enext / Avon OdontoPrev",
+    company: "Enext",
     period: "May 2021 - Aug 2021",
     responsibilities: [
       "Built e-commerce apps using React, JQuery and Sass in VTEX Platform",

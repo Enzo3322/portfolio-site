@@ -9,20 +9,19 @@ const projects = [
   {
     title: "Odontoprev",
     description: "Created a new e-commerce platform using VTEX IO with React and Node.",
-    technologies: ["VTEX IO", "React", "Node.js"],
+    technologies: ["VTEX IO", "React", "Node.js", "Typescript", "React"],
+    image: "/placeholder.svg?height=200&width=400",
+  },
+  {
+    title: "Comunix",
+    description: "Created microservices for a company that provides human resources solutions for the insurance industry.",
+    technologies: ["EKS", "AWS", "Kafka", "Docker", "Kubernetes", "Node.js", "Typescript", "Vue"],
     image: "/placeholder.svg?height=200&width=400",
   },
   {
     title: "Carrefour",
     description: "Created solutions for the e-commerce platform using VTEX, including checkout and payment processing.",
-    technologies: ["VTEX", "Checkout", "Payment Integration"],
-    image: "/placeholder.svg?height=200&width=400",
-  },
-  {
-    title: "Usaflex",
-    description:
-      "Developed a new e-commerce platform using VTEX IO, ReactJS and NodeJS. Implemented new features and integrations inside OMNI Channel.",
-    technologies: ["VTEX IO", "React", "Node.js", "OMNI Channel"],
+    technologies: ["VTEX", "Checkout", "Payment Integration", "Typescript", "React"],
     image: "/placeholder.svg?height=200&width=400",
   },
   {
@@ -70,14 +69,7 @@ export function Projects() {
         >
           {projects.map((project, index) => (
             <motion.div key={index} variants={item}>
-              <Card className="bg-gray-900 border-gray-800 overflow-hidden hover:border-purple-700 transition-colors">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform hover:scale-105"
-                  />
-                </div>
+              <Card className="bg-gray-900 border-gray-800 overflow-hidden hover:border-purple-700 h-full transition-colors">
                 <CardHeader>
                   <CardTitle className="text-gray-100 flex items-center justify-between">
                     {project.title}
