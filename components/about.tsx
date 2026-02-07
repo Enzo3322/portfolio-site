@@ -1,33 +1,37 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useI18n } from "@/lib/i18n"
 
 export function About() {
+  const { t } = useI18n()
+
   return (
     <section id="about" className="py-20">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
         className="space-y-8"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
-          About Me
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600">
+          {t("about.title")}
         </h2>
-        <div className="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-800">
-          <p className="text-lg text-gray-300 leading-relaxed">
-            I am a Software Engineer with a strong foundation in e-commerce development, particularly within the VTEX
-            platform. Over the past few years, I have had the opportunity to work on diverse projects, focusing on
-            system design, checkout processes, and third-party integrations.
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="bg-gray-50 rounded-2xl p-8 shadow-sm border border-gray-100"
+        >
+          <p className="text-lg text-gray-600 leading-relaxed">
+            {t("about.p1")}
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed mt-4">
-            I value collaboration and am committed to continuous learning, having supported team members through pair
-            programming and actively contributing to the success of each project. With experience in both frontend and
-            backend development, I strive to deliver reliable, well-documented, and scalable solutions while remaining
-            open to new challenges and opportunities for growth.
+          <p className="text-lg text-gray-600 leading-relaxed mt-4">
+            {t("about.p2")}
           </p>
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   )
