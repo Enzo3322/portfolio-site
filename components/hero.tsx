@@ -31,12 +31,7 @@ export function Hero() {
         />
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="space-y-6 relative z-10"
-      >
+      <div className="space-y-6 relative z-10">
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -54,14 +49,9 @@ export function Hero() {
         >
           {t("hero.subtitle")}
         </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="max-w-2xl text-xl text-gray-500 text-center mx-auto"
-        >
+        <p className="max-w-2xl text-xl text-gray-500 text-center mx-auto">
           {t("hero.description")}
-        </motion.p>
+        </p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,7 +74,7 @@ export function Hero() {
             <a href="#contact">{t("hero.cta.connect")}</a>
           </Button>
         </motion.div>
-      </motion.div>
+      </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

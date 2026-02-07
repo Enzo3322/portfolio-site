@@ -69,7 +69,7 @@ export function Navbar() {
               <Globe className="h-3.5 w-3.5" />
               {lang.toUpperCase()}
             </button>
-            <button onClick={() => setMobileOpen(!mobileOpen)} className="text-gray-600">
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="text-gray-600" aria-label={mobileOpen ? "Close menu" : "Open menu"}>
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
