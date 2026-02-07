@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Enzo Spagnolli | Senior Software Engineer",
     short_name: "Enzo Spagnolli",
     description:
-      "Portfolio of Enzo Spagnolli, a Senior Software Engineer specializing in scalable web applications.",
+      "Portfolio of Enzo Spagnolli, a Senior Software Engineer specializing in scalable applications.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

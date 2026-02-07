@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Enzo Spagnolli",
   },
   description:
-    "Portfolio of Enzo Spagnolli, a Senior Software Engineer specializing in scalable web applications, Node.js microservices, React, TypeScript, and cloud architecture.",
+    "Portfolio of Enzo Spagnolli, a Senior Software Engineer specializing in scalable applications, Node.js microservices, React, TypeScript, and cloud architecture.",
   keywords: [
     "Senior Software Engineer",
     "Full-Stack Developer",
@@ -59,13 +59,13 @@ export const metadata: Metadata = {
     siteName: "Enzo Spagnolli | Senior Software Engineer",
     title: "Enzo Spagnolli | Senior Software Engineer",
     description:
-      "Senior Software Engineer specializing in scalable web applications, Node.js microservices, React, TypeScript, and cloud architecture.",
+      "Senior Software Engineer specializing in scalable applications, Node.js microservices, React, TypeScript, and cloud architecture.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Enzo Spagnolli | Senior Software Engineer",
     description:
-      "Senior Software Engineer specializing in scalable web applications, Node.js microservices, React, TypeScript, and cloud architecture.",
+      "Senior Software Engineer specializing in scalable applications, Node.js microservices, React, TypeScript, and cloud architecture.",
   },
   alternates: {
     canonical: siteUrl,
